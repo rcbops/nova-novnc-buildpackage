@@ -1,0 +1,15 @@
+nova-novnc (2011.3-d5-rcb1) natty; urgency=low
+
+  * Updated upstream source from
+    https://github.com/sleepsonthefloor/noVNC.git, revision
+    f1d0f3faebe16a9cb045c07148ead902d3ff4f4c Updated debian packaging
+    from https://github.com/rpedde/debians.git, revision
+    7b1e2e84fa6f9b7e4722699b19149f05a1876b5a
+
+ -- root <build@syn-n04.lab>  Tue, 13 Sep 2011 23:38:27 -0500
+
+nova-novnc (000-000-0000) maverick; urgency=low
+
+   * Initial Commit
+
+ -- root <root@packaging>  Tue, 19 Jul 2011 22:21:31 +0000

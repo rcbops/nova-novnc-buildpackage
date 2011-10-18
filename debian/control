@@ -1,0 +1,15 @@
+Source: nova-novnc
+Section: python
+Priority: optional
+Maintainer: Rackspace
+Build-Depends: debhelper (>=7.0.50~), python-support (>= 0.6), cdbs (>= 0.4.49), python-all-dev, python-setuptools
+XS-Python-Version: >=2.6
+Standards-Version: 3.9.1
+
+Package: nova-novnc
+Architecture: all
+Homepage: https://github.com/sleepsonthefloor/noVNC
+XB-Python-Version: ${python:Versions}
+Depends: ${misc:Depends}, ${python:Depends}, adduser, python-lxml, python-pysqlite2, sqlite3
+Description: noVNC support for OpenStack
+
