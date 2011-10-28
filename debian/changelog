@@ -1,4 +1,4 @@
-nova-novnc (2011.3-d5-rcb1.1) natty; urgency=low
+nova-novnc (2011.3-d5-rcb2) natty; urgency=low
 
   * add rcb-component in prep for essex-e0 drop
 
