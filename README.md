@@ -11,6 +11,9 @@ noVNC is licensed under the
 Special thanks to [Sentry Data Systems](http://www.sentryds.com) for
 sponsoring ongoing development of this project (and for employing me).
 
+There are many companies/projects that have integrated noVNC into
+their products including: [Sentry Data Systems](http://www.sentryds.com), [Ganeti Web Manager](http://code.osuosl.org/projects/ganeti-webmgr), [Archipel](http://archipelproject.org), [openQRM](http://www.openqrm.com/), [OpenNode](http://www.opennodecloud.com/), [OpenStack](http://www.openstack.org), [Broadway (HTML5 GDK/GTK+ backend)](http://blogs.gnome.org/alexl/2011/03/15/gtk-html-backend-update/), [OpenNebula](http://opennebula.org/), [CloudSigma](http://www.cloudsigma.com/), [Zentyal (formerly eBox)](http://www.zentyal.org/), and [SlapOS](http://www.slapos.org). See [this wiki page](https://github.com/kanaka/noVNC/wiki/ProjectsCompanies-using-noVNC) for more info and links.
+
 Notable commits, announcements and news are posted to
 @<a href="http://www.twitter.com/noVNC">noVNC</a>
 
@@ -23,26 +26,6 @@ Running in Chrome before and after connecting:
 
 See more screenshots <a href="http://kanaka.github.com/noVNC/screenshots.html">here</a>.
 
-
-### Projects/Companies using noVNC
-
-* [Sentry Data Systems](http://www.sentryds.com): uses noVNC in the
-  [Datanex Cloud Computing Platform](http://www.sentryds.com/products/datanex/).
-
-* [Ganeti Web Manager](http://code.osuosl.org/projects/ganeti-webmgr):
-  Feature [#1935](http://code.osuosl.org/issues/1935).
-
-* [Archipel](http://archipelproject.org):
-  [Video demo](http://antoinemercadal.fr/archipelblog/wp-content/themes/ArchipelWPTemplate/video_youtube.php?title=VNC%20Demonstration&id=te_bzW574Zo)
-
-* [openQRM](http://www.openqrm.com/): VNC plugin available
-  by request. Probably included in [version
-  4.8](http://www.openqrm.com/?q=node/15). [Video
-    demo](http://www.openqrm-enterprise.com/news/details/article/remote-vm-console-plugin-available.html).
-
-* [OpenNode](http://www.opennodecloud.com/): uses noVNC in
-  [OpenNode Management Console](http://opennode.activesys.org/about/software-included-in-opennode/).
-  [OMC Screencast](http://opennode.activesys.org/about/opennode-management-console-screencast/).
 
 ### Browser Requirements
 
@@ -61,7 +44,7 @@ See more screenshots <a href="http://kanaka.github.com/noVNC/screenshots.html">h
   mean noVNC is painfully slow.
 
 * I maintain a more detailed list of browser compatibility <a
-  href="wiki/Browser-support">here</a>.
+  href="https://github.com/kanaka/noVNC/wiki/Browser-support">here</a>.
 
 
 ### Server Requirements
@@ -100,11 +83,11 @@ There a few reasons why a proxy is required:
 
 ### Other Pages
 
-* [Advanced Usage](wiki/Advanced-usage). Generating an SSL
+* [Advanced Usage](https://github.com/kanaka/noVNC/wiki/Advanced-usage). Generating an SSL
   certificate, starting a VNC server, advanced websockify usage, etc.
 
-* [Integrating noVNC](wiki/Integration) into existing projects.
+* [Integrating noVNC](https://github.com/kanaka/noVNC/wiki/Integration) into existing projects.
 
-* [Troubleshooting noVNC](wiki/Troubleshooting) problems.
+* [Troubleshooting noVNC](https://github.com/kanaka/noVNC/wiki/Troubleshooting) problems.
 
 
