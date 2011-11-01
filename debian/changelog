@@ -21,8 +21,3 @@ nova-novnc (2011.3-d5-rcb1) natty; urgency=low
 
  -- root <build@syn-n04.lab>  Tue, 13 Sep 2011 23:38:27 -0500
 
-nova-novnc (000-000-0000) maverick; urgency=low
-
-   * Initial Commit
-
- -- root <root@packaging>  Tue, 19 Jul 2011 22:21:31 +0000
