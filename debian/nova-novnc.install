@@ -10,11 +10,14 @@ utils/wsproxy.py        /var/lib/nova/noVNC/utils
 utils/rebind.c          /var/lib/nova/noVNC/utils
 utils/rebind.so         /var/lib/nova/noVNC/utils
 images/favicon.ico      /var/lib/nova/noVNC
+images/favicon.png	/var/lib/nova/noVNC/images
+images/full_512x512.png	/var/lib/nova/noVNC/images
+images/Logo.svg		/var/lib/nova/noVNC/images
+images/screen_640x435.png	/var/lib/nova/noVNC/images
 include/base64.js       /var/lib/nova/noVNC/include
 include/black.css       /var/lib/nova/noVNC/include
+include/canvas.js	/var/lib/nova/noVNC/include
 include/des.js          /var/lib/nova/noVNC/include
-include/display.js      /var/lib/nova/noVNC/include
-include/input.js        /var/lib/nova/noVNC/include
 include/logo.js         /var/lib/nova/noVNC/include
 include/plain.css       /var/lib/nova/noVNC/include
 include/playback.js     /var/lib/nova/noVNC/include

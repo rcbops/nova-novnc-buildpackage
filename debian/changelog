@@ -1,3 +1,9 @@
+nova-novnc (2011.3-final-rcb2) natty; urgency=low
+
+  * d5-to-final patch 
+
+ -- RCB Builder <rcb-deploy@lists.rackspace.com>  Tue, 20 Dec 2011 16:38:25 -0600
+
 nova-novnc (2011.3-final-rcb1) natty; urgency=low
 
   * Bump version to 2011.3-final from github.com/cloudbuilders/noVNC.git,
