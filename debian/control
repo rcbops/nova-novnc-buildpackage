@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: RCB Builder <rcb-deploy@lists.rackspace.com>
 Build-Depends: debhelper (>=7.0.0~)
 Standards-Version: 3.83
-XCBS-Rcb-Component: diablo-final
+XCBS-Rcb-Component: essex-e3
 
 Package: nova-novnc
 Architecture: all
