@@ -17,7 +17,7 @@ Package: nova-vncproxy
 Architecture: all
 Homepage: https://github.com/cloudbuilders/noVNC
 XB-Python-Version: ${python:Versions}
-Depends: ${python:Depends}, nova-common (=2012.0+e3)
+Depends: ${python:Depends}, nova-common (>=2012.0+e3)
 Description: OpenStack Compute - VNC Proxy
  OpenStack is a reliable cloud infrastructure. Its mission is to produce
  the ubiquitous cloud computing platform that will meet the needs of public
