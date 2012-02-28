@@ -1,1 +1,1 @@
-utils/nova-novncproxy usr/bin
+debian/nova-vncproxy usr/bin
