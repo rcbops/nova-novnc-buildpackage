@@ -1,8 +1,7 @@
 --- /dev/null
 +++ b/bin/nova-vncproxy
-@@ -0,0 +1,5 @@
+@@ -0,0 +1,4 @@
 +#!/bin/bash
 +
-+PYTHONPATH=/var/lib/nova/noVNC/utils
-+/var/lib/nova/noVNC/utils/nova-novncproxy $*
++PYTHONPATH=/var/lib/nova/noVNC/utils /var/lib/nova/noVNC/utils/nova-novncproxy --daemon --web=/var/lib/nova/noVNC $*
 +
