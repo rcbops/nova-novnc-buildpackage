@@ -13,9 +13,9 @@
 
 set -e
 
-DAEMON=/usr/bin/nova-novncproxy
+DAEMON=/usr/bin/nova-vncproxy
 DAEMON_ARGS="--flagfile=/etc/nova/nova.conf"
-PIDFILE=/var/run/nova/nova-novncproxy.pid
+PIDFILE=/var/run/nova/nova-vncproxy.pid
 
 ENABLED=true
 
@@ -50,10 +50,10 @@ case "$1" in
     $0 start
     ;;
   status)
-    status_of_proc -p $PIDFILE $DAEMON nova-novncproxy && exit 0 || exit $?
+    status_of_proc -p $PIDFILE $DAEMON nova-vncproxy && exit 0 || exit $?
     ;;
   *)
-    log_action_msg "Usage: /etc/init.d/nova-novncproxy {start|stop|restart|force-reload|status}"
+    log_action_msg "Usage: /etc/init.d/nova-vncproxy {start|stop|restart|force-reload|status}"
     exit 1
     ;;
 esac

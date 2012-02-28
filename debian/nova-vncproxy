@@ -1,5 +1,0 @@
-#!/bin/bash
-
-PYTHONPATH=/var/lib/nova/noVNC/utils
-/var/lib/nova/noVNC/utils/nova-novncproxy $*
-

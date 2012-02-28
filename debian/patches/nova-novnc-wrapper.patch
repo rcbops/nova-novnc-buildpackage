@@ -1,0 +1,8 @@
+--- /dev/null
++++ b/bin/nova-vncproxy
+@@ -0,0 +1,5 @@
++#!/bin/bash
++
++PYTHONPATH=/var/lib/nova/noVNC/utils
++/var/lib/nova/noVNC/utils/nova-novncproxy $*
++
