@@ -1,3 +1,9 @@
+nova-novnc (2012.0+e3-rcb5) natty; urgency=low
+
+  * add init scripts for nova-vncproxy
+
+ -- RCB Builder <rcb-deploy@lists.rackspace.com>  Tue, 28 Feb 2012 11:21:58 -0800
+
 nova-novnc (2012.0+e3-rcb4) natty; urgency=low
 
   * Add nova-vncproxy package

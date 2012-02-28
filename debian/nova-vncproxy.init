@@ -1,0 +1,61 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides:          nova-vncproxy
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: nova-vncproxy server
+# Description:       Provides vnc proxy services for openstack
+#                    cloud computing system
+### END INIT INFO
+
+
+set -e
+
+DAEMON=/usr/bin/nova-novncproxy
+DAEMON_ARGS="--flagfile=/etc/nova/nova.conf"
+PIDFILE=/var/run/nova/nova-novncproxy.pid
+
+ENABLED=true
+
+mkdir -p /var/run/nova
+chown nova:root /var/run/nova/
+
+mkdir -p /var/lock/nova
+chown nova:root /var/lock/nova/
+
+uid="$(getent passwd nova | cut -f3 -d:)"
+gid="$(getent passwd nova | cut -f4 -d:)"
+
+. /lib/lsb/init-functions
+
+export PATH="${PATH:+$PATH:}/usr/sbin:/sbin"
+export TMPDIR=/var/lib/nova/tmp
+
+case "$1" in
+  start)
+    log_daemon_msg "Starting nova compute" "nova-compute"
+    start-stop-daemon --start --chdir /var/run --chuid ${uid}:${gid} -b -m --pidfile $PIDFILE --exec ${DAEMON} -- ${DAEMON_ARGS}
+    log_end_msg $?
+    ;;
+  stop)
+    log_daemon_msg "Stopping nova compute" "nova-compute"
+    start-stop-daemon --stop --oknodo --pidfile ${PIDFILE}
+    log_end_msg $?
+    ;;
+  restart|force-reload)
+    $0 stop
+    sleep 1
+    $0 start
+    ;;
+  status)
+    status_of_proc -p $PIDFILE $DAEMON nova-novncproxy && exit 0 || exit $?
+    ;;
+  *)
+    log_action_msg "Usage: /etc/init.d/nova-novncproxy {start|stop|restart|force-reload|status}"
+    exit 1
+    ;;
+esac
+
+exit 0
